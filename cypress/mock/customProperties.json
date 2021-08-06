@@ -1,0 +1,75 @@
+{
+  "isShowcase": false,
+  "rackStates": {
+    "rackAlarm": {
+      "text": "A",
+      "textColor": {
+        "default": "#fff",
+        "dark": "#fff"
+      },
+      "rectColor": "#af2341"
+    },
+    "racked": {
+      "text": "R",
+      "textColor": {
+        "default": "#272729",
+        "dark": "#fff"
+      },
+      "rectColor": "none"
+    },
+    "rackTest": {
+      "text": "T",
+      "textColor": {
+        "default": "#272729",
+        "dark": "#fff"
+      },
+      "rectColor": "none"
+    }
+  },
+  "component": {
+    "test-sld": {
+      "id": "test-sld",
+      "idSuffix": "-breaker",
+      "link": "",
+      "isPowerMeter": false,
+      "metric": "test-sld",
+      "metricVar": {
+        "breakerMetric": "-breaker",
+        "valueMetric": "-data",
+        "trippedMetric": "-tripped",
+        "rackedMetric": "-racked",
+        "rackTestMetric": "-test",
+        "rackAlarmMetric": "-racked-alarm"
+      },
+      "hasDescription": false,
+      "isActive": true,
+      "invertBreaker": false,
+      "invertTripped": false,
+      "invertRack": false,
+      "baseUnit": "kW",
+      "decimals": 1
+    },
+    "power-meter": {
+      "id": "test-sld",
+      "idSuffix": "-pm",
+      "link": "",
+      "isPowerMeter": true,
+      "metric": "test-sld",
+      "metricVar": {
+        "breakerMetric": "",
+        "valueMetric": "-data",
+        "trippedMetric": "",
+        "rackedMetric": "",
+        "rackTestMetric": "",
+        "rackAlarmMetric": ""
+      },
+      "hasDescription": false,
+      "isActive": true,
+      "invertBreaker": false,
+      "invertTripped": false,
+      "invertRack": false,
+      "baseUnit": "kW",
+      "decimals": 1
+    }
+  }
+}
