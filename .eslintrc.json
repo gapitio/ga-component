@@ -12,12 +12,5 @@
     "plugin:import/typescript"
   ],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "import"],
-  "rules": {
-    "import/order": [
-      "error",
-      { "newlines-between": "always", "alphabetize": { "order": "asc" } }
-    ],
-    "sort-imports": ["error", { "ignoreDeclarationSort": true }]
-  }
+  "plugins": ["@typescript-eslint", "import"]
 }
