@@ -1,75 +1,49 @@
 {
   "isShowcase": false,
-  "rackStates": {
-    "rackAlarm": {
-      "text": "A",
-      "textColor": {
-        "default": "#fff",
-        "dark": "#fff"
-      },
-      "rectColor": "#af2341"
+  "defaultColors": {
+    "active": {
+      "lightTheme": "#272729",
+      "darkTheme": "#fff",
+      "tripped": "#af2341",
+      "missingCom": "#ffcd00"
     },
-    "racked": {
-      "text": "R",
-      "textColor": {
-        "default": "#272729",
-        "dark": "#fff"
-      },
-      "rectColor": "none"
-    },
-    "rackTest": {
-      "text": "T",
-      "textColor": {
-        "default": "#272729",
-        "dark": "#fff"
-      },
-      "rectColor": "none"
+    "inactive": {
+      "lightTheme": "#9F9F9F",
+      "darkTheme": "#6D6F73"
     }
   },
   "component": {
-    "test-sld": {
-      "id": "test-sld",
-      "idSuffix": "-breaker",
-      "link": "",
-      "isPowerMeter": false,
-      "metric": "test-sld",
+    "vertical": {
+      "id": "vertical",
+      "metric": "vertical",
       "metricVar": {
         "breakerMetric": "-breaker",
         "valueMetric": "-data",
-        "trippedMetric": "-tripped",
-        "rackedMetric": "-racked",
-        "rackTestMetric": "-test",
-        "rackAlarmMetric": "-racked-alarm"
+        "trippedMetric": "-tripped"
       },
-      "hasDescription": false,
       "isActive": true,
-      "invertBreaker": false,
+      "link": "asd",
       "invertTripped": false,
-      "invertRack": false,
+      "invertBreaker": false,
       "baseUnit": "kW",
-      "decimals": 1
+      "decimals": 1,
+      "descriptionText": "2000A"
     },
-    "power-meter": {
-      "id": "test-sld",
-      "idSuffix": "-pm",
-      "link": "",
-      "isPowerMeter": true,
-      "metric": "test-sld",
+    "horizontal": {
+      "id": "horizontal",
+      "metric": "horizontal",
       "metricVar": {
-        "breakerMetric": "",
+        "breakerMetric": "-breaker",
         "valueMetric": "-data",
-        "trippedMetric": "",
-        "rackedMetric": "",
-        "rackTestMetric": "",
-        "rackAlarmMetric": ""
+        "trippedMetric": "-tripped"
       },
-      "hasDescription": false,
       "isActive": true,
-      "invertBreaker": false,
+      "link": "asd",
       "invertTripped": false,
-      "invertRack": false,
+      "invertBreaker": false,
       "baseUnit": "kW",
-      "decimals": 1
+      "decimals": 1,
+      "descriptionText": "2000A"
     }
   }
 }
