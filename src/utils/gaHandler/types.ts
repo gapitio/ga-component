@@ -33,6 +33,7 @@ export interface ElementInterface {
 }
 
 export interface EltConfig {
+  groupElt: SVGGElement;
   clickElt: SVGRectElement;
   valueElt: SVGTSpanElement;
   descriptionElt: SVGTextElement;
@@ -55,4 +56,21 @@ export interface Colors {
     lightTheme: string;
     darkTheme: string;
   };
+}
+
+export interface ComponentType {
+  id: string;
+  metric: string;
+  metricVar: {
+    breakerMetric: string;
+    valueMetric: string;
+    trippedMetric: string;
+  };
+  isActive: boolean;
+  link: string;
+  invertTripped: boolean;
+  invertBreaker: boolean;
+  baseUnit: string;
+  decimals: number;
+  descriptionText: string;
 }
