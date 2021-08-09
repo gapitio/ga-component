@@ -1,4 +1,4 @@
-export * from "./utils/gaHandler/componentHandler";
+export * from "./utils/gaHandler/gaComponent";
 export * from "./utils/gaHandler/fuseHandler";
 export * from "./utils/gaHandler/trippedHandler";
 export * from "./utils/gaHandler/valueHandler";
@@ -7,3 +7,4 @@ export * from "./utils/gaHandler/getElementConfig";
 export * from "./utils/gaHandler/setElements";
 export * from "./utils/gaHandler/types";
 export * from "./utils/gaHandler/updateBreakerColor";
+export * from "./utils/gaHandler/updateDescription";
