@@ -4,26 +4,9 @@ import { trippedHandler } from "./trippedHandler";
 import { executeConfig } from "./executeConfig";
 import { setElements } from "./setElements";
 import { valueHandler } from "./valueHandler";
-import type { Colors } from "./types";
+import type { Colors, ComponentType } from "./types";
 
-interface ComponentType {
-  id: string;
-  metric: string;
-  metricVar: {
-    breakerMetric: string;
-    valueMetric: string;
-    trippedMetric: string;
-  };
-  isActive: boolean;
-  link: string;
-  invertTripped: boolean;
-  invertBreaker: boolean;
-  baseUnit: string;
-  decimals: number;
-  descriptionText: string;
-}
-
-export function componentHandler({
+export function gaHandler({
   component,
   defaultColors,
   showcase,
