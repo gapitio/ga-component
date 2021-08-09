@@ -50,6 +50,7 @@ export function getElementConfig(id: string): EltConfig {
   );
 
   return {
+    groupElt,
     clickElt,
     valueElt,
     descriptionElt,
