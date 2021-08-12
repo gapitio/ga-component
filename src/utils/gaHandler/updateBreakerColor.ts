@@ -21,9 +21,9 @@ export function updateBreakerColor({
     strokeElement.style.stroke = breakerColor;
   }
 
-  for (const fillElement of [
+  for (const fillElement of ([
     ...fillGroup.children,
-  ] as unknown as HTMLCollectionOf<SVGPathElement>) {
+  ] as unknown) as HTMLCollectionOf<SVGPathElement>) {
     fillElement.style.fill = breakerColor;
   }
 }

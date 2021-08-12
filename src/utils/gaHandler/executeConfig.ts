@@ -23,8 +23,13 @@ export function executeConfig(
     inactiveBreaker,
   } = eltConfig;
 
-  const { trippedOpacity, textColor, trippedColor, valueColor, breakerColor } =
-    trippedConfig;
+  const {
+    trippedOpacity,
+    textColor,
+    trippedColor,
+    valueColor,
+    breakerColor,
+  } = trippedConfig;
 
   const { active, inactive } = fuseConfig;
 
