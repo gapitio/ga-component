@@ -36,7 +36,7 @@ context("GA - horizontal", () => {
   const { isShowcase, defaultColors, component } = customProperties;
 
   it("contains all elements with getElementConfig", () => {
-    const { id } = component.horizontal;
+    const { id, idSuffix } = component.horizontal;
     const {
       groupElt,
       clickElt,
@@ -48,7 +48,7 @@ context("GA - horizontal", () => {
       fillGroup,
       activeBreaker,
       inactiveBreaker,
-    } = getElementConfig(id);
+    } = getElementConfig({ id, idSuffix });
 
     console.log(
       "groupElt: ",
@@ -89,6 +89,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -236,6 +237,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -293,6 +295,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -352,6 +355,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -411,6 +415,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -479,6 +484,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -544,6 +550,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -594,6 +601,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -644,6 +652,7 @@ context("GA - horizontal", () => {
     const component: { horizontal: ComponentType } = {
       horizontal: {
         id: "horizontal",
+        idSuffix: "-breaker",
         metric: "horizontal",
         metricVar: {
           breakerMetric: "-breaker",
@@ -681,7 +690,10 @@ context("GA - horizontal", () => {
       },
     ]);
 
-    const { descriptionElt } = getElementConfig(component.horizontal.id);
+    const { descriptionElt } = getElementConfig({
+      id: component.horizontal.id,
+      idSuffix: component.horizontal.idSuffix,
+    });
 
     updateDescription(descriptionElt, component.horizontal.descriptionText);
 

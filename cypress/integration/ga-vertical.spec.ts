@@ -36,7 +36,7 @@ context("GA - vertical", () => {
   const { isShowcase, defaultColors, component } = customProperties;
 
   it("contains all elements with getElementConfig", () => {
-    const { id } = component.vertical;
+    const { id, idSuffix } = component.vertical;
     const {
       groupElt,
       clickElt,
@@ -48,7 +48,7 @@ context("GA - vertical", () => {
       fillGroup,
       activeBreaker,
       inactiveBreaker,
-    } = getElementConfig(id);
+    } = getElementConfig({ id, idSuffix });
 
     console.log(
       "groupElt: ",
@@ -89,6 +89,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -232,6 +233,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -289,6 +291,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -347,6 +350,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -405,6 +409,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -470,6 +475,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -534,6 +540,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -583,6 +590,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -632,6 +640,7 @@ context("GA - vertical", () => {
     const component: { vertical: ComponentType } = {
       vertical: {
         id: "vertical",
+        idSuffix: "-breaker",
         metric: "vertical",
         metricVar: {
           breakerMetric: "-breaker",
@@ -668,7 +677,10 @@ context("GA - vertical", () => {
       },
     ]);
 
-    const { descriptionElt } = getElementConfig(component.vertical.id);
+    const { descriptionElt } = getElementConfig({
+      id: component.vertical.id,
+      idSuffix: component.vertical.idSuffix,
+    });
 
     updateDescription(descriptionElt, component.vertical.descriptionText);
 

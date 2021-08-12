@@ -15,6 +15,7 @@
   "component": {
     "vertical": {
       "id": "vertical",
+      "idSuffix": "-breaker",
       "metric": "vertical",
       "metricVar": {
         "breakerMetric": "-breaker",
@@ -31,6 +32,7 @@
     },
     "horizontal": {
       "id": "horizontal",
+      "idSuffix": "-breaker",
       "metric": "horizontal",
       "metricVar": {
         "breakerMetric": "-breaker",
