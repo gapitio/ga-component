@@ -60,6 +60,7 @@ export interface Colors {
 
 export interface ComponentType {
   id: string;
+  idSuffix: string;
   metric: string;
   metricVar: {
     breakerMetric: string;

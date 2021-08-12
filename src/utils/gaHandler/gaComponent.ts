@@ -17,6 +17,7 @@ export function gaHandler({
 }): void {
   const {
     id,
+    idSuffix,
     metric,
     metricVar,
     isActive,
@@ -26,7 +27,7 @@ export function gaHandler({
     decimals,
     baseUnit,
   } = component;
-  const eltConfig = getElementConfig(id);
+  const eltConfig = getElementConfig({ id, idSuffix });
 
   setElements({
     isActive,

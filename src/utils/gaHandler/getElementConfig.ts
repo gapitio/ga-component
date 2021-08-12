@@ -1,8 +1,14 @@
 import { queryGroupSelector, querySelector } from "../querySelector";
 import type { EltConfig } from "./types";
 
-export function getElementConfig(id: string): EltConfig {
-  const groupElt = querySelector<SVGGElement>(`#${id}-breaker`);
+export function getElementConfig({
+  id,
+  idSuffix,
+}: {
+  id: string;
+  idSuffix: string;
+}): EltConfig {
+  const groupElt = querySelector<SVGGElement>(`#${id}${idSuffix}`);
 
   const clickElt = queryGroupSelector<SVGRectElement>(
     groupElt,
