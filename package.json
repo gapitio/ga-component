@@ -1,6 +1,6 @@
 {
   "name": "@gapit/ga-component",
-  "description": "A component for controlling a sld component.",
+  "description": "A component for controlling a ga component.",
   "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
