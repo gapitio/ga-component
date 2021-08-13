@@ -11,7 +11,7 @@ export interface FuseResults {
 }
 
 export interface TrippedResults {
-  trippedOpacity: string;
+  trippedDisplay: string;
   textColor: string;
   trippedColor: string;
   valueColor: string;

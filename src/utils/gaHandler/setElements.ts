@@ -35,7 +35,7 @@ export function setElements({
   } else descriptionElt.style.display = "none";
 
   if (metricVar.trippedMetric) {
-    trippedElt.style.opacity = "0";
+    trippedElt.style.display = "none";
   }
 
   activeBreaker.style.display = "inline";

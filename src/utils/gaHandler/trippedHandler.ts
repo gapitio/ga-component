@@ -21,7 +21,7 @@ export function trippedHandler(
     ) {
       case active:
         return {
-          trippedOpacity: "1",
+          trippedDisplay: "inline",
           textColor: darkTheme,
           trippedColor: tripped,
           valueColor: darkTheme,
@@ -29,7 +29,7 @@ export function trippedHandler(
         };
       case inactive:
         return {
-          trippedOpacity: "0",
+          trippedDisplay: "none",
           textColor: theme.isDark ? darkTheme : lightTheme,
           trippedColor: tripped,
           valueColor: theme.isDark ? darkTheme : lightTheme,
@@ -37,7 +37,7 @@ export function trippedHandler(
         };
       default:
         return {
-          trippedOpacity: "1",
+          trippedDisplay: "inline",
           textColor: lightTheme,
           trippedColor: missingCom,
           valueColor: lightTheme,
@@ -46,7 +46,7 @@ export function trippedHandler(
     }
   }
   return {
-    trippedOpacity: "0",
+    trippedDisplay: "none",
     textColor: theme.isDark ? darkTheme : lightTheme,
     trippedColor: missingCom,
     valueColor: theme.isDark ? darkTheme : lightTheme,

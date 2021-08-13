@@ -24,7 +24,7 @@ export function executeConfig(
   } = eltConfig;
 
   const {
-    trippedOpacity,
+    trippedDisplay,
     textColor,
     trippedColor,
     valueColor,
@@ -52,7 +52,7 @@ export function executeConfig(
     descriptionElt.style.fill = textColor;
   }
 
-  trippedElt.style.opacity = trippedOpacity;
+  trippedElt.style.display = trippedDisplay;
   trippedElt.style.fill = trippedColor;
 
   activeBreaker.style.display = active;
