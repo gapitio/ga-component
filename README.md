@@ -2,7 +2,7 @@
 
 This component handles GA drawings of SLD components.
 
-This component is created based around the gaHandler function and requires all elements to be included. The element list will be listed below.
+This component is created based around the gaHandler function and requires all elements to be included. The [element list](#svg-element) is listed below.
 
 This component is used with Grafana specific to the plugin: [htmlgrapics](https://grafana.com/grafana/plugins/gapit-htmlgraphics-panel/).
 
@@ -19,7 +19,7 @@ This is how a working ga element looks like. The code is sensitive to the given 
 
 ## customProperties
 
-Here is the json needed for the function. The id is tied to the group name of the SVG component. The metric and metricVar's are connected to the alias given to the grafana query.
+Here is the json needed for the function. The id is tied to the group name of the SVG component. The metric and metricVars are connected to the alias given to the grafana query.
 
 ```json
 {
@@ -88,7 +88,7 @@ initialize();
 ## getElementConfig
 
 This is another useful function to further customize your elements.
-Given the components id & idSuffix it will return each given element. Depending on what you do you can customize as you would like but, the base function may override it.
+Given the components id & idSuffix it will return each given element. You can customize the elements as you would like, but the `gaHandler` function may override it.
 
 ```ts
 import { getElementConfig } from "@gapit/ga-component";

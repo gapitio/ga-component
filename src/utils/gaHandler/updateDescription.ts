@@ -4,10 +4,10 @@ export function updateDescription(
   descriptionElt: SVGTextElement,
   descriptionText: string
 ): void {
-  const descriptionTspan = queryGroupPosition(descriptionElt, 0);
-
-  if (descriptionText)
+  if (descriptionText) {
+    const descriptionTspan = queryGroupPosition(descriptionElt, 0);
     descriptionTspan.textContent = descriptionTspan.textContent?.includes("-")
       ? ` - ${descriptionText}`
       : descriptionText;
+  }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@gapit/ga-component",
-  "description": "A component for controlling a sld component.",
+  "description": "A component for controlling a ga component.",
   "version": "0.0.0",
   "license": "MIT",
   "main": "dist/index.js",
@@ -59,13 +59,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gapitio/component-template.git"
+    "url": "git+https://github.com/gapitio/ga-component.git"
   },
   "author": "Gapit",
   "bugs": {
-    "url": "https://github.com/gapitio/component-template/issues"
+    "url": "https://github.com/gapitio/ga-component/issues"
   },
-  "homepage": "https://github.com/gapitio/component-template#readme",
+  "homepage": "https://github.com/gapitio/ga-component#readme",
   "publishConfig": {
     "access": "public"
   }
