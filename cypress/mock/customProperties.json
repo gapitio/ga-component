@@ -1,0 +1,51 @@
+{
+  "isShowcase": false,
+  "defaultColors": {
+    "active": {
+      "lightTheme": "#272729",
+      "darkTheme": "#fff",
+      "tripped": "#af2341",
+      "missingCom": "#ffcd00"
+    },
+    "inactive": {
+      "lightTheme": "#9F9F9F",
+      "darkTheme": "#6D6F73"
+    }
+  },
+  "component": {
+    "vertical": {
+      "id": "vertical",
+      "idSuffix": "-breaker",
+      "metric": "vertical",
+      "metricVar": {
+        "breakerMetric": "-breaker",
+        "valueMetric": "-data",
+        "trippedMetric": "-tripped"
+      },
+      "isActive": true,
+      "link": "asd",
+      "invertTripped": false,
+      "invertBreaker": false,
+      "baseUnit": "kW",
+      "decimals": 1,
+      "descriptionText": "4P - 2000A"
+    },
+    "horizontal": {
+      "id": "horizontal",
+      "idSuffix": "-breaker",
+      "metric": "horizontal",
+      "metricVar": {
+        "breakerMetric": "-breaker",
+        "valueMetric": "-data",
+        "trippedMetric": "-tripped"
+      },
+      "isActive": true,
+      "link": "asd",
+      "invertTripped": false,
+      "invertBreaker": false,
+      "baseUnit": "kW",
+      "decimals": 1,
+      "descriptionText": "2000A"
+    }
+  }
+}

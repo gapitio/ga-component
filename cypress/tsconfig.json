@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "include": [
+    "../node_modules/cypress",
+    "*/*.ts",
+    "../types",
+    "integration/ga-horizontal.spec.ts",
+    "integration/ga-vertical.spec.ts"
+  ]
+}

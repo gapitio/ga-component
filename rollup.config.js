@@ -14,6 +14,7 @@ export default [
     plugins: [
       typescript({
         clean: true,
+        tsconfig: "./tsconfig.build.json",
       }),
       nodeResolve({
         browser: true,
