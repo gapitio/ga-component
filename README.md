@@ -2,7 +2,7 @@
 
 This component handles GA drawings of SLD components.
 
-This component is created based around the gaHandler function and requires all elements to be included. The element list will be listed below.
+This component is created based around the gaHandler function and requires all elements to be included. The [element list](#svg-element) is listed below.
 
 This component is used with Grafana specific to the plugin: [htmlgrapics](https://grafana.com/grafana/plugins/gapit-htmlgraphics-panel/).
 
