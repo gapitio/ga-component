@@ -12,8 +12,8 @@ This component is used with Grafana specific to the plugin: [htmlgrapics](https:
 
 This is how a working ga element looks like. The code is sensitive to the given names so they should not be altered. To create more than one element at a time add a "\_number" to the end.
 
-![svg](static/screenshots/svg.png)
-![svg-list](static/screenshots/svg-list.png)
+![svg](https://raw.githubusercontent.com/gapitio/ga-component/main/static/screenshots/svg.png)
+![svg-list](https://raw.githubusercontent.com/gapitio/ga-component/main/static/screenshots/svg-list.png)
 
 ---
 
@@ -81,7 +81,7 @@ const initialize = () => {
 initialize();
 ```
 
-![svg-running](static/screenshots/svg-running.png)
+![svg-running](https://raw.githubusercontent.com/gapitio/ga-component/main/static/screenshots/svg-running.png)
 
 ---
 
