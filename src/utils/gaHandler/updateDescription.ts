@@ -6,8 +6,9 @@ export function updateDescription(
 ): void {
   if (descriptionText) {
     const descriptionTspan = queryGroupPosition(descriptionElt, 0);
-    descriptionTspan.textContent = descriptionTspan.textContent?.includes("-")
-      ? ` - ${descriptionText}`
-      : descriptionText;
+    descriptionTspan.textContent =
+      descriptionTspan.textContent?.slice(0, 3) === " - "
+        ? ` - ${descriptionText}`
+        : descriptionText;
   }
 }
