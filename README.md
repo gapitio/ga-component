@@ -19,7 +19,7 @@ This is how a working ga element looks like. The code is sensitive to the given 
 
 ## customProperties
 
-Here is the json needed for the function. The id is tied to the group name of the SVG component. The metric and metricVar's are connected to the alias given to the grafana query.
+Here is the json needed for the function. The id is tied to the group name of the SVG component. The metric and metricVars are connected to the alias given to the grafana query.
 
 ```json
 {
