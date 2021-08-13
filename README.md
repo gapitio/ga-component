@@ -88,7 +88,7 @@ initialize();
 ## getElementConfig
 
 This is another useful function to further customize your elements.
-Given the components id & idSuffix it will return each given element. Depending on what you do you can customize as you would like but, the base function may override it.
+Given the components id & idSuffix it will return each given element. You can customize the elements as you would like, but the `gaHandler` function may override it.
 
 ```ts
 import { getElementConfig } from "@gapit/ga-component";
