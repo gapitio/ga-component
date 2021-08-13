@@ -65,7 +65,7 @@
   "bugs": {
     "url": "https://github.com/gapitio/ga-component/issues"
   },
-  "homepage": "https://github.com/gapitio/component-template#readme",
+  "homepage": "https://github.com/gapitio/ga-component#readme",
   "publishConfig": {
     "access": "public"
   }
