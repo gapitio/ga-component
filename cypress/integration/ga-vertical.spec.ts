@@ -102,7 +102,7 @@ context("GA - vertical", () => {
         invertBreaker: false,
         baseUnit: "kW",
         decimals: 1,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -246,7 +246,7 @@ context("GA - vertical", () => {
         invertBreaker: false,
         baseUnit: "kW",
         decimals: 1,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -304,7 +304,7 @@ context("GA - vertical", () => {
         invertBreaker: false,
         baseUnit: "kW",
         decimals: 1,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -363,7 +363,7 @@ context("GA - vertical", () => {
         invertBreaker: false,
         baseUnit: "kW",
         decimals: 1,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -422,7 +422,7 @@ context("GA - vertical", () => {
         invertBreaker: true,
         baseUnit: "kW",
         decimals: 1,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -488,7 +488,7 @@ context("GA - vertical", () => {
         invertBreaker: true,
         baseUnit: "kW",
         decimals: 1,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -553,7 +553,7 @@ context("GA - vertical", () => {
         invertBreaker: true,
         baseUnit: "test",
         decimals: 1,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -603,7 +603,7 @@ context("GA - vertical", () => {
         invertBreaker: true,
         baseUnit: "kW",
         decimals: 2,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -653,7 +653,7 @@ context("GA - vertical", () => {
         invertBreaker: true,
         baseUnit: "kW",
         decimals: 2,
-        descriptionText: "2000A",
+        descriptionText: "4P - 2000A",
       },
     };
 
@@ -692,6 +692,6 @@ context("GA - vertical", () => {
 
     cy.get("#amp")
       .children("tspan")
-      .should("have.text", ` - ${component.vertical.descriptionText}`);
+      .should("have.text", `${component.vertical.descriptionText}`);
   });
 });

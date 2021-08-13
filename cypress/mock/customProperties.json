@@ -28,7 +28,7 @@
       "invertBreaker": false,
       "baseUnit": "kW",
       "decimals": 1,
-      "descriptionText": "2000A"
+      "descriptionText": "4P - 2000A"
     },
     "horizontal": {
       "id": "horizontal",
