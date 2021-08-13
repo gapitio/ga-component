@@ -112,7 +112,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "0");
+    cy.get("#tripped").should("have.css", "display", "none");
     cy.get("#tag-1").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(159, 159, 159)");
     cy.get("#data-9")
@@ -145,7 +145,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "1");
+    cy.get("#tripped").should("have.css", "display", "inline");
     cy.get("#tripped").should("have.css", "fill", "rgb(175, 35, 65)");
     cy.get("#tag-1").should("have.css", "fill", "rgb(255, 255, 255)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(255, 255, 255)");
@@ -181,7 +181,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "0");
+    cy.get("#tripped").should("have.css", "display", "none");
     cy.get("#tag-1").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#data-9")
@@ -214,7 +214,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "1");
+    cy.get("#tripped").should("have.css", "display", "inline");
     cy.get("#tripped").should("have.css", "fill", "rgb(255, 205, 0)");
     cy.get("#tag-1").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(39, 39, 41)");
@@ -275,7 +275,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "1");
+    cy.get("#tripped").should("have.css", "display", "inline");
     cy.get("#tripped").should("have.css", "fill", "rgb(255, 205, 0)");
     cy.get("#tag-1").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(39, 39, 41)");
@@ -333,7 +333,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "0");
+    cy.get("#tripped").should("have.css", "display", "none");
     cy.get("#tag-1").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#data-9").children("tspan").should("have.text", "2.0 kW");
@@ -393,7 +393,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "0");
+    cy.get("#tripped").should("have.css", "display", "none");
     cy.get("#tag-1").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#data-9").children("tspan").should("have.text", "2.0 kW");
@@ -459,7 +459,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "1");
+    cy.get("#tripped").should("have.css", "display", "inline");
     cy.get("#tripped").should("have.css", "fill", "rgb(175, 35, 65)");
     cy.get("#tag-1").should("have.css", "fill", "rgb(255, 255, 255)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(255, 255, 255)");
@@ -528,7 +528,7 @@ context("GA - horizontal", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped").should("have.css", "opacity", "0");
+    cy.get("#tripped").should("have.css", "display", "none");
     cy.get("#tag-1").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp-7").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#data-9").children("tspan").should("have.text", "2.0 kW");

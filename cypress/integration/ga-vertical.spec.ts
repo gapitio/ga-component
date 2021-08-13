@@ -112,7 +112,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "0");
+    cy.get("#tripped-90").should("have.css", "display", "none");
     cy.get("#tag").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp").should("have.css", "fill", "rgb(159, 159, 159)");
     cy.get("#data")
@@ -143,7 +143,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "1");
+    cy.get("#tripped-90").should("have.css", "display", "inline");
     cy.get("#tripped-90").should("have.css", "fill", "rgb(175, 35, 65)");
     cy.get("#tag").should("have.css", "fill", "rgb(255, 255, 255)");
     cy.get("#amp").should("have.css", "fill", "rgb(255, 255, 255)");
@@ -177,7 +177,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "0");
+    cy.get("#tripped-90").should("have.css", "display", "none");
     cy.get("#tag").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#data")
@@ -210,7 +210,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "1");
+    cy.get("#tripped-90").should("have.css", "display", "inline");
     cy.get("#tripped-90").should("have.css", "fill", "rgb(255, 205, 0)");
     cy.get("#tag").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp").should("have.css", "fill", "rgb(39, 39, 41)");
@@ -271,7 +271,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "1");
+    cy.get("#tripped-90").should("have.css", "display", "inline");
     cy.get("#tripped-90").should("have.css", "fill", "rgb(255, 205, 0)");
     cy.get("#tag").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp").should("have.css", "fill", "rgb(39, 39, 41)");
@@ -328,7 +328,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "0");
+    cy.get("#tripped-90").should("have.css", "display", "none");
     cy.get("#tag").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#data").children("tspan").should("have.text", "2.0 kW");
@@ -387,7 +387,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "0");
+    cy.get("#tripped-90").should("have.css", "display", "none");
     cy.get("#tag").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#data").children("tspan").should("have.text", "2.0 kW");
@@ -452,7 +452,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "1");
+    cy.get("#tripped-90").should("have.css", "display", "inline");
     cy.get("#tripped-90").should("have.css", "fill", "rgb(175, 35, 65)");
     cy.get("#tag").should("have.css", "fill", "rgb(255, 255, 255)");
     cy.get("#amp").should("have.css", "fill", "rgb(255, 255, 255)");
@@ -518,7 +518,7 @@ context("GA - vertical", () => {
       showcase: isShowcase,
     });
 
-    cy.get("#tripped-90").should("have.css", "opacity", "0");
+    cy.get("#tripped-90").should("have.css", "display", "none");
     cy.get("#tag").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#amp").should("have.css", "fill", "rgb(39, 39, 41)");
     cy.get("#data").children("tspan").should("have.text", "2.0 kW");
